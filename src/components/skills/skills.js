@@ -1,9 +1,8 @@
 import React from "react"
 import Section  from "../section/section"
 import Style from "./skills.module.scss"
-import { Col, Container, Row, Card, Button} from "react-bootstrap"
+import { Col, Row, Card} from "react-bootstrap"
 import data from "../../config/skills.config"
-import {Link} from "gatsby"
 
 const Skills = () => {
   return(
@@ -27,11 +26,6 @@ const Skills = () => {
             )
           })}
         </Row>
-      <div className={'d-flex justify-content-center pt-4 my-4'}>
-        <Button variant="outline-primary">
-          <Link to={'/portfolio'}>Check out my work -></Link>
-        </Button>
-      </div>
     </Section>
   )
 }
