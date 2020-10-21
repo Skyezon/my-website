@@ -1,0 +1,10 @@
+.section-title{
+  & > h2{
+    text-align: center;
+    font-size: 3rem;
+  }
+  &-line{
+    width: 10rem;
+    height: 8px;
+  }
+}

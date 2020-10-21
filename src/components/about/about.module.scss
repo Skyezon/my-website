@@ -1,0 +1,32 @@
+@import "../variable";
+.about{
+
+  &-image{
+    position: relative;
+    width: 40rem;
+    border-radius: 50%;
+  }
+
+  &-body{
+    display: block;
+    position: relative;
+  }
+
+  &-line{
+      width: 100px;
+      height: 8px;
+      background-color: $color-blue-light;
+  }
+
+  & h2{
+    margin-bottom: 0.85rem;
+  }
+
+  &-textbox{
+      position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%,-50%);
+
+  }
+}
