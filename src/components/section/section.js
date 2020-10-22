@@ -1,10 +1,10 @@
 import React  from "react"
 import SectionTitle from "../section-title/section-title"
 
-const Section = ({styling,title,color,children,bodyStyle}) => {
+const Section = ({styling,title,color,children,bodyStyle,id}) => {
 
   return (
-    <div className={styling + " my-3 py-4"}>
+    <div id={id} className={styling + " my-3 py-4"}>
       <div className={"d-flex justify-content-center flex-column align-items-center"}>
         <SectionTitle title={title} color={color}/>
       </div>

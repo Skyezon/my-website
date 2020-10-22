@@ -1,0 +1,26 @@
+.portfolio{
+
+}
+
+.image{
+  max-width: 30rem;
+  height: 14.7rem;
+  background-size: contain;
+}
+
+.button{
+  text-decoration: none;
+  color: black;
+  &:visited, &:link{
+    color: black;
+  }
+  &:hover{
+    color: white;
+  }
+}
+
+.item{
+  font-size: 1rem;
+  background-image: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7));
+  width : 70%;
+}

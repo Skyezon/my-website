@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 html{
@@ -11,7 +12,8 @@ html{
 }
 
 body{
+  height: 100%;
   min-height: 100%;
-  @include rfs(20px);
+  @include rfs(18px);
   background-color: $color-white;
 }

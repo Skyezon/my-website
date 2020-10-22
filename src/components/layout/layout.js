@@ -7,22 +7,21 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import Footer from "../footer/footer"
+import Footer from "./footer/footer"
 
-import Header from "../header"
+import Header from "./header"
 import "./layout.scss"
 import { Container } from "react-bootstrap"
 
 const Layout = ({ children }) => {
-
   return (
-    <Container fluid={true}>
+    <div >
       <Header />
       <div className={'container'}>
         <main>{children}</main>
       </div>
       <Footer/>
-    </Container>
+    </div>
   )
 }
 

@@ -8,15 +8,7 @@ const data = [
     "image" : "spyhp",
     "tags" : ["sass","javascript"]
   },
-  {
-    "id" : 2,
-    "title" : "Sugenerator",
-    "desc" : "A Letter generator with CMS support",
-    "liveProject": "",
-    "github" : "https://github.com/Skyezon/Sugenerator",
-    "image" : "sugenerator",
-    "tags" : ["laravel","sass","javascript"]
-  },
+
   {
     "id" : 3,
     "title" : "Cosmepick",
@@ -25,6 +17,24 @@ const data = [
     "github" : "https://github.com/Skyezon/Cosmepick",
     "image" : "cosmepick",
     "tags" : ["laravel","sass","javascript"]
+  },
+  {
+    "id" : 6,
+    "title" : "TechnoScape website",
+    "desc" : "A website for an event",
+    "liveProject": "",
+    "github" : "https://github.com/Skyezon/technoscape",
+    "image" : "technoscape",
+    "tags" : ["javascript","sass","webpack"]
+  },
+  {
+    "id" : 7,
+    "title" : "Natour (course)",
+    "desc" : "a website when studying a css course",
+    "liveProject": "",
+    "github" : "https://github.com/Skyezon/Natour-project",
+    "image" : "natour",
+    "tags" : ["sass","vanilla"]
   },
   {
     "id" : 4,
@@ -45,22 +55,13 @@ const data = [
     "tags" : ["flutter","mobile"]
   },
   {
-    "id" : 6,
-    "title" : "TechnoScape website",
-    "desc" : "A website for an event",
+    "id" : 2,
+    "title" : "Sugenerator",
+    "desc" : "A Letter generator with CMS support",
     "liveProject": "",
-    "github" : "https://github.com/Skyezon/technoscape",
-    "image" : "technoscape",
-    "tags" : ["javascript","sass","webpack"]
-  },
-  {
-    "id" : 7,
-    "title" : "Natour (course)",
-    "desc" : "a website when studying a css course",
-    "liveProject": "",
-    "github" : "https://github.com/Skyezon/Natour-project",
-    "image" : "natour",
-    "tags" : ["sass","vanilla"]
+    "github" : "https://github.com/Skyezon/Sugenerator",
+    "image" : "sugenerator",
+    "tags" : ["laravel","sass","javascript"]
   },
   {
     "id" : 8,

@@ -1,0 +1,6 @@
+@import "../../../../node_modules/rfs/scss";
+.social{
+  @include rfs(30px);
+  //background-color: white;
+  color: white;
+}
