@@ -9,19 +9,20 @@ import { graphql, useStaticQuery } from "gatsby"
 
 const handleActive = (hoverState,activeNumer,activeState,data) => {
   if (hoverState && (activeNumer == activeState)){
+
     return <Container className={Style.item + " h-100"}>
-      <h3 className={'text-center my-4'}>{data.title}</h3>
+      <h3 className={'text-center my-4 text-capitalize'}>{data.title}</h3>
       <div className={"mb-2"}>{data.desc}</div>
       <div className={"d-flex justify-content-around my-3"}>
         {(data.github !== "") ?
           <Button variant={"outline-primary"}>
-            <a rel={"noopener"} target={"_blank"} href={data.github}>Code repository</a>
+            <a rel={"noreferrer"} target={"_blank"} href={data.github}>Code repository</a>
           </Button>
           : ""
         }
         {(data.liveProject !== "") ?
           <Button variant={"outline-primary"}>
-            <a rel={"noopener"} target={"_blank"} href={data.liveProject}>Live Demo</a>
+            <a rel={"noreferrer"} target={"_blank"} href={data.liveProject}>Live Demo</a>
           </Button>
           : ""
         }
@@ -69,7 +70,7 @@ const Portfolio = () => {
 
             return(
               <Col lg={6}>
-                <BackgroundImage fluid={imageNya === null ? "" : imageNya} backgroundColor={`#040e18`} className={Style.image + " m-3"}>
+                <BackgroundImage fluid={imageNya === null ? null : imageNya} backgroundColor={`#040e18`} className={Style.image + " m-3"}>
                   <div onMouseOver={() => {setHover(true); setActive(item.id)}} onMouseLeave={() => {setHover(false); setActive(0)}} className={"d-flex justify-content-center align-items-center h-100"}>
                     {handleActive(hover,item.id,active,item)}
                   </div>

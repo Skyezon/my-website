@@ -9,7 +9,7 @@ import Portfolio from "../components/portfolio/portfolio"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Richard Delbert Tannady" />
      <SplashScreen/>
      <About/>
      <Skills/>

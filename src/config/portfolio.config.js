@@ -40,7 +40,7 @@ const data = [
     "title" : "bmi-calculator (course)",
     "desc" : "one of my flutter projects",
     "liveProject": "",
-    "github" : "",
+    "github" : "https://github.com/Skyezon/bmi-calculator-flutter",
     "image" : "bmi",
     "tags" : ["flutter","mobile"]
   },
@@ -66,8 +66,8 @@ const data = [
     "id" : 8,
     "title" : "Group profile example",
     "desc" : "a group profile website",
-    "liveProject": "https://github.com/Skyezon/web-mulmed",
-    "github" : "",
+    "liveProject": "",
+    "github" : "https://github.com/Skyezon/web-mulmeds",
     "image" : "mulmed",
     "tags" : ["react","javascript"]
   },

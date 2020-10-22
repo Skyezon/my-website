@@ -7,16 +7,18 @@ import Logo from "./logo/logo"
 
 const Header = () => (
   <header>
-    <Navbar bg="light" expand="lg" sticky={"top"}>
-      <NavbarBrand><Link to={'/'}><Logo/></Link></NavbarBrand>
+    <Navbar bg="light" expand="lg" sticky={"top"} fixed={"top"}>
+      {/*<NavbarBrand><Link to={'/'}><Logo/></Link></NavbarBrand>*/}
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-
+        <Nav className="m-auto">
+          <Nav.Link>Home</Nav.Link>
+          <Nav.Link>About me</Nav.Link>
+          <Nav.Link>My Skills</Nav.Link>
+          <Nav.Link>My work</Nav.Link>
+          {/*<Nav.Link>Certificate</Nav.Link>*/}
         </Nav>
-        <Nav.Link><Link to={'/'}>Home</Link></Nav.Link>
-        <Nav.Link><Link to={'/portfolio'}>PortFolio</Link></Nav.Link>
-        <Nav.Link><Link to={'/certificate'}>Certificate</Link></Nav.Link>
+
       </Navbar.Collapse>
     </Navbar>
   </header>

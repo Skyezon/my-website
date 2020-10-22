@@ -6,7 +6,7 @@ import { data, shapeColor } from "../../config/about.config"
 
 const About = () => {
   return (
-    <Section title={"About"} color={"#4cc7db"} bodyStyle={Style.aboutBody} styling={Style.about}>
+    <Section title={"About"} color={"#31AA52"} bodyStyle={Style.aboutBody} styling={Style.about}>
       <div className={"d-flex flex-column justify-content-center align-items-center"}>
         <p align={"center"} className={"w-75"}>
           {data.content}
