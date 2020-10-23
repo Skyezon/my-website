@@ -47,7 +47,7 @@ import employee from "../images/employee.svg"
     {
       'title' : "Learner",
       'content' : `Not gonna lie the fact that I'm still learning right now. I see my self as a life long learner and will always tries new things`,
-      "type" : "secondary",
+      "type" : "warning",
       "icon" : mortar
     },
     {

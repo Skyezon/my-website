@@ -3,7 +3,7 @@ import Section from "../section"
 import Style from "./portfolio.module.scss"
 import BackgroundImage from "gatsby-background-image"
 import data from "../../../config/portfolio.config"
-import { Button, Col, Row } from "react-bootstrap"
+import { Button, Col, Row, Badge } from "react-bootstrap"
 import { graphql, useStaticQuery } from "gatsby"
 import {gsap} from "gsap"
 
@@ -16,7 +16,7 @@ const handleActive = (hoverState,activeNumer,activeState,data, setRef) => {
       <div className={"mb-2"}>{data.desc}</div>
       <div className={"d-flex justify-content-around my-3"}>
         {(data.github !== "") ?
-          <a rel={"noreferrer"} target={"_blank"} href={data.github}><Button variant={"outline-primary"}>Code repository</Button></a>
+          <a rel={"noreferrer"} target={"_blank"} href={data.github}><Button variant={"outline-danger"}>Code repository</Button></a>
           : ""
         }
         {(data.liveProject !== "") ?
@@ -27,7 +27,7 @@ const handleActive = (hoverState,activeNumer,activeState,data, setRef) => {
       <div>
         tags :
         {data.tags.map((tag) => {
-          return<span> {tag} </span>
+          return<Badge variant={"secondary"} className={"mx-2"}>  {tag}</Badge>
         })}
       </div>
     </div>
@@ -59,10 +59,9 @@ const handleAnimation = (ref) =>{
         opacity : 0,
       },"start")
       .from(kotak.children[3],{
-        x : -100,
+        x : -300,
         opacity : 0
       },"start")
-  tl.play()
 }
 
 

@@ -5,7 +5,6 @@
   color: white;
   transition: all 1s;
   padding: 0.25rem 0.85rem;
-
   &:hover{
     background-color: white;
     color: black;
@@ -13,5 +12,6 @@
 }
 
 .item{
+
   width: fit-content !important;
 }

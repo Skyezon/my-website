@@ -6,11 +6,11 @@ import { Col, Row } from "react-bootstrap"
 
 const Social = (data) => {
   return(
-    <Col lg={1} sm={1} className={Style.item + " text-white"}>
+    <span className={Style.item + " text-white mx-2"}>
       <a target={"_blank"} rel={"noreferrer"} href={data.link} className={Style.social}>
         <FontAwesomeIcon icon={data.icon} name={data.name} title={data.name} />
-     </a>
-    </Col>
+      </a>
+    </span>
   )
 }
 

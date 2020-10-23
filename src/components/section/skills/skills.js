@@ -22,7 +22,7 @@ const Skills = () => {
                     <div style={{backgroundImage : `url(${select.icon})`}} className={Style.image + " text-center"}></div>
                   </div>
                   <Card.Title className={"text-center mt-4"}>{select.title}</Card.Title>
-                  <Card.Text className={"text-justify " + Style.text}>
+                  <Card.Text className={Style.text + " text-center"}>
                     {select.content}
                   </Card.Text>
                 </Card.Body>
