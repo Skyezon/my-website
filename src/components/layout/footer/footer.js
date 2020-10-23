@@ -9,7 +9,7 @@ const Footer = () => {
       <div className={"d-flex justify-content-around my-3"}>
           {data.map((item) => Social(item))}
       </div>
-      <div>Richard Delbert © {new Date().getFullYear()}</div>
+      <div >Richard Delbert © {new Date().getFullYear()}</div>
     </footer>
   )
 }

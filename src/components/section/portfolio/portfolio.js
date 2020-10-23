@@ -16,11 +16,11 @@ const handleActive = (hoverState,activeNumer,activeState,data, setRef) => {
       <div className={"mb-2"}>{data.desc}</div>
       <div className={"d-flex justify-content-around my-3"}>
         {(data.github !== "") ?
-          <a rel={"noreferrer"} target={"_blank"} href={data.github}><Button variant={"outline-danger"}>Code repository</Button></a>
+          <a rel={"noreferrer"} target={"_blank"} href={data.github}><Button variant={"danger"}>Code repository</Button></a>
           : ""
         }
         {(data.liveProject !== "") ?
-          <a rel={"noreferrer"} target={"_blank"} href={data.liveProject}><Button variant={"outline-success"}>Live Demo</Button></a>
+          <a rel={"noreferrer"} target={"_blank"} href={data.liveProject}><Button variant={"success"}>Live Demo</Button></a>
           : ""
         }
       </div>
