@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `My website`,
-    description: `Richard delbert's website`,
+    title: `Richard Delbert Tannady | Web Developer`,
+    description: `Richard delbert's website for the portfolio of a website developer`,
     author: `Richard Delbert`,
   },
   plugins: [
@@ -18,18 +18,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `richard-delbert-tannady`,
+        short_name: `Richard`,
         start_url: `/`,
-        background_color: `#e2f3f5`,
-        theme_color: `#3d5af1`,
+        background_color: `#e3e3e3`,
+        theme_color: `#000`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },
     },
-    `gatsby-plugin-scroll-reveal`,
     `gatsby-plugin-offline`,
-    `gatsby-plugin-sass`,
-    `gatsby-plugin-styled-components`
+    `gatsby-plugin-sass`
   ],
 }
