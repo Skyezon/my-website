@@ -11,7 +11,7 @@ import {gsap} from "gsap"
 
 const handleActive = (hoverState,activeNumer,activeState,data, setRef) => {
   if (hoverState && (activeNumer === activeState)){
-    return <div ref={el => setRef(el)} className={Style.item + " h-100 py-3 px-4 overflow-hidden"}>
+    return <div ref={el => setRef(el)} className={Style.item + " h-100 py-3 px-4 text-center overflow-hidden"}>
       <h3 className={'text-center text-capitalize mb-3'}>{data.title}</h3>
       <div className={"mb-2"}>{data.desc}</div>
       <div className={"d-flex justify-content-around my-3"}>
@@ -98,7 +98,7 @@ const Portfolio = () => {
       }
   `)
   return(
-    <Section id="portfolio" title={"My works"} color={"#FBBD01"} styling={Style.portfolio} >
+    <Section id="portfolio" title={"My Works"} color={"#FBBD01"} styling={Style.portfolio} >
       <Row>
         {data.map((item) => {
           let imageNya = null

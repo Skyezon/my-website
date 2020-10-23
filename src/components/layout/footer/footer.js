@@ -2,7 +2,6 @@ import React  from "react"
 import Style from "./footer.module.scss"
 import Social from "./social"
 import data from "../../../config/footer.config"
-import { Row, Col } from "react-bootstrap"
 
 const Footer = () => {
   return(

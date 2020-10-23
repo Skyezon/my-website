@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react"
-import {gsap, Power3, Power4} from "gsap"
+import {gsap, Power3} from "gsap"
 import Style from "./splash-screen.module.scss"
 
 const SplashScreen = () => {

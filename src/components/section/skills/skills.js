@@ -1,11 +1,8 @@
-import React, { useEffect, useRef } from "react"
+import React from "react"
 import Section  from "../section"
 import Style from "./skills.module.scss"
 import { Col, Row, Card} from "react-bootstrap"
 import data from "../../../config/skills.config"
-import {ScrollTrigger} from "gsap/ScrollTrigger"
-
-
 
 const Skills = () => {
 

@@ -2,46 +2,6 @@ import mortar from "../images/mortarboard.svg"
 import desktop from "../images/desktop.svg"
 import employee from "../images/employee.svg"
 
-// import React from "react"
-// import { graphql, useStaticQuery } from "gatsby"
-
-
-  // const mortar = useStaticQuery(graphql`
-  //     query {
-  //         placeholderImage: file(relativePath: { eq: "mortarboard.svg" }) {
-  //             childImageSharp {
-  //                 fluid(maxWidth: 300) {
-  //                     ...GatsbyImageSharpFluid
-  //                 }
-  //             }
-  //         }
-  //     }
-  // `)
-  //
-  // const desktop = useStaticQuery(graphql`
-  //     query {
-  //         placeholderImage: file(relativePath: { eq: "desktop.svg" }) {
-  //             childImageSharp {
-  //                 fluid(maxWidth: 300) {
-  //                     ...GatsbyImageSharpFluid
-  //                 }
-  //             }
-  //         }
-  //     }
-  // `)
-  //
-  // const employee = useStaticQuery(graphql`
-  //     query {
-  //         placeholderImage: file(relativePath: { eq: "employee.svg" }) {
-  //             childImageSharp {
-  //                 fluid(maxWidth: 300) {
-  //                     ...GatsbyImageSharpFluid
-  //                 }
-  //             }
-  //         }
-  //     }
-  // `)
-
 
   const data = [
     {

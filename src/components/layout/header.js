@@ -4,9 +4,6 @@ import React from "react"
 import { Navbar, Nav } from "react-bootstrap"
 import ScrollSpy  from "react-scrollspy"
 
-const handleClick = () => {
-
-}
 
 const Header = () => (
   <header>

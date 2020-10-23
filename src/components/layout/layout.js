@@ -11,7 +11,6 @@ import Footer from "./footer/footer"
 
 import Header from "./header"
 import "./layout.scss"
-import { Container } from "react-bootstrap"
 
 const Layout = ({ children }) => {
   return (

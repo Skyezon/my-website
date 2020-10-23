@@ -1,8 +1,6 @@
 import React from "react"
 import Style from "./social.module.scss"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {Link} from "gatsby"
-import { Col, Row } from "react-bootstrap"
 
 const Social = (data) => {
   return(
