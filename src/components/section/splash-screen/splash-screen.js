@@ -35,7 +35,7 @@ const SplashScreen = () => {
     <div id={"home"} className={Style.splashScreen}>
       <div ref={el => pole = el} className={Style.pole}></div>
       <div ref={el => parent = el} style={{paddingLeft: "100px"}} className={'d-flex flex-column pl-5 overflow-hidden'}>
-        <div><div>Hi there, I'm <span style={{borderBottom: "solid 8px #FBBD01", fontWeight:"bold",}}>Richard Delbert</span></div></div>
+        <div><div>Hi there, I'm <span className={"d-block d-lg-inline"} style={{borderBottom: "solid 8px #FBBD01", width: "fit-content", fontWeight:"bold",}}>Richard Delbert</span></div></div>
         <div><div>I'm a <span><span style={{borderBottom : "solid 5px #EB4132"}}>Web Developer</span></span></div></div>
       </div>
     </div>

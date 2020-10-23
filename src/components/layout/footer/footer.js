@@ -7,10 +7,9 @@ import { Row, Col } from "react-bootstrap"
 const Footer = () => {
   return(
     <footer className={Style.footer + " d-flex flex-column py-3"}>
-      <Row>
+      <Row className={"d-flex justify-content-around my-3"}>
           {data.map((item) => Social(item))}
       </Row>
-
       <div>Richard Delbert © {new Date().getFullYear()}</div>
     </footer>
   )

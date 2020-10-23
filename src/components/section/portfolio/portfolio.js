@@ -39,7 +39,7 @@ const handleAnimation = (ref) =>{
     const kotak = ref
     let tl = gsap.timeline({
       defaults : {
-        visibility : "visible"
+        duration : 1
       }
     })
     tl.from(kotak,{
