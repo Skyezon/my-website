@@ -10,7 +10,7 @@ const data = [
   },
 
   {
-    "id" : 3,
+    "id" : 2,
     "title" : "Cosmepick",
     "desc" : "A company profile website",
     "liveProject": "",
@@ -19,7 +19,7 @@ const data = [
     "tags" : ["laravel","sass","javascript"]
   },
   {
-    "id" : 6,
+    "id" : 3,
     "title" : "TechnoScape website",
     "desc" : "A website for an event",
     "liveProject": "",
@@ -28,7 +28,7 @@ const data = [
     "tags" : ["javascript","sass","webpack"]
   },
   {
-    "id" : 7,
+    "id" : 4,
     "title" : "Natour (course)",
     "desc" : "a website when studying a css course",
     "liveProject": "",
@@ -37,7 +37,7 @@ const data = [
     "tags" : ["sass","vanilla"]
   },
   {
-    "id" : 4,
+    "id" : 5,
     "title" : "Ecom-example",
     "desc" : "My first project of coding a website",
     "liveProject": "",
@@ -46,7 +46,7 @@ const data = [
     "tags" : ["html","css","vanilla"]
   },
   {
-    "id" : 5,
+    "id" : 6,
     "title" : "bmi-calculator (course)",
     "desc" : "one of my flutter projects",
     "liveProject": "",
@@ -55,7 +55,7 @@ const data = [
     "tags" : ["flutter","mobile"]
   },
   {
-    "id" : 2,
+    "id" : 7,
     "title" : "Sugenerator",
     "desc" : "A Letter generator with CMS support",
     "liveProject": "",

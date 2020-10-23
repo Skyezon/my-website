@@ -15,7 +15,7 @@ import { Container } from "react-bootstrap"
 
 const Layout = ({ children }) => {
   return (
-    <div >
+    <div style={{overflow : "hidden"}}>
       <Header />
       <div className={'container'}>
         <main>{children}</main>
