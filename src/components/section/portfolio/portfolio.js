@@ -11,24 +11,26 @@ import {gsap} from "gsap"
 
 const handleActive = (hoverState,activeNumer,activeState,data, setRef) => {
   if (hoverState && (activeNumer === activeState)){
-    return <div ref={el => setRef(el)} className={Style.item + " h-100 py-3 px-4 text-center overflow-hidden"}>
-      <h3 className={'text-center text-capitalize mb-3'}>{data.title}</h3>
-      <div className={"mb-2"}>{data.desc}</div>
-      <div className={"d-flex justify-content-around my-3"}>
-        {(data.github !== "") ?
-          <a rel={"noreferrer"} target={"_blank"} href={data.github}><Button variant={"danger"}>Code repository</Button></a>
-          : ""
-        }
-        {(data.liveProject !== "") ?
-          <a rel={"noreferrer"} target={"_blank"} href={data.liveProject}><Button variant={"success"}>Live Demo</Button></a>
-          : ""
-        }
-      </div>
-      <div>
-        tags :
-        {data.tags.map((tag) => {
-          return<Badge variant={"secondary"} className={"mx-2"}>  {tag}</Badge>
-        })}
+    return<div className={"invisible h-100 w-100"}>
+      <div ref={el => setRef(el)} className={Style.item + "  h-100 py-3 px-0 px-md-4 text-center overflow-hidden"} >
+        <h3 className={'text-center text-capitalize mb-3'}>{data.title}</h3>
+        <div className={"mb-2"}>{data.desc}</div>
+        <div className={"d-flex justify-content-around my-3"}>
+          {(data.github !== "") ?
+            <a rel={"noreferrer"} target={"_blank"} href={data.github}><Button variant={"danger"}>Code repository</Button></a>
+            : ""
+          }
+          {(data.liveProject !== "") ?
+            <a rel={"noreferrer"} target={"_blank"} href={data.liveProject}><Button variant={"success"}>Live Demo</Button></a>
+            : ""
+          }
+        </div>
+        <div>
+          tags :
+          {data.tags.map((tag) => {
+            return<Badge variant={"secondary"} className={"mx-2"}>  {tag}</Badge>
+          })}
+        </div>
       </div>
     </div>
   }
@@ -42,11 +44,12 @@ const handleAnimation = (ref) =>{
         duration : 1
       }
     })
-    tl.from(kotak,{
+
+    tl
+      .from(kotak,{
       duration : .5,
       width : 0,
-      visibility : "visible"
-    })
+      })
       .from(kotak.children[0],{
         y : -100,
         opacity: 0
@@ -74,10 +77,14 @@ const Portfolio = () => {
   }
 
   useEffect(() =>{
-    // handleAnimation()
     if (hover){
-      console.log(someRef)
+      gsap.to(someRef,{
+        css : {
+          visibility : "visible"
+        }
+      })
       handleAnimation(someRef)
+
     }
   })
 

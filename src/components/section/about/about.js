@@ -22,7 +22,7 @@ const About = () => {
       scrollTrigger : {
         trigger : ".balls"
       },
-      x :-1000,
+      x : "-90vw",
     })
     gsap.from([ball3,ball4],{
       duration : 3,
@@ -31,7 +31,7 @@ const About = () => {
       scrollTrigger : {
         trigger : ".balls"
       },
-      x : 1000
+      x : "90vw"
     })
 
   })

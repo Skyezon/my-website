@@ -6,15 +6,21 @@ const SplashScreen = () => {
   let pole = useRef(null)
   let parent = useRef(null)
 
-  let tl = gsap.timeline();
+  let tl = gsap.timeline({css : {
+    visibility : "visible",
+
+    }});
   useEffect(() =>{
     let firstLine = parent.children[0]
     let name = firstLine
     let secondLine = parent.children[1]
     let job = secondLine.children[0].children[0]
 
-
-    console.log(firstLine, name, secondLine, job)
+    gsap.to([pole,parent],{
+      css:{
+        visibility : "visible"
+      }
+    })
 
     tl.from(pole,{
       duration : 1.5,
@@ -32,10 +38,10 @@ const SplashScreen = () => {
 
 
   return (
-    <div id={"home"} className={Style.splashScreen}>
+    <div id={"home"} className={Style.splashScreen + " invisible"}>
       <div ref={el => pole = el} className={Style.pole}></div>
       <div ref={el => parent = el} style={{paddingLeft: "100px"}} className={'d-flex flex-column pl-5 overflow-hidden'}>
-        <div><div>Hi there, I'm <span className={"d-block d-lg-inline"} style={{borderBottom: "solid 5px #FBBD01", width: "fit-content", fontWeight:"bold",}}>Richard Delbert</span></div></div>
+        <div><div>Hi there, I'm <span className={Style.firstLine + " d-block d-lg-inline"} style={{}}><span>Richard</span> <span>Delbert</span></span></div></div>
         <div><div>I'm a <span><span ><span style={{borderBottom : "solid 5px #EB4132"}}>Web</span> <span style={{borderBottom : "solid 5px #EB4132"}}>Developer</span></span></span></div></div>
       </div>
     </div>

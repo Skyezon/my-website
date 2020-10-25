@@ -11,7 +11,7 @@ const Header = () => (
       {/*<NavbarBrand><Link to={'/'}><Logo/></Link></NavbarBrand>*/}
       <Navbar.Toggle aria-controls="basic-navbar-nav" />
       <Navbar.Collapse id="basic-navbar-nav">
-          <ScrollSpy className={"d-flex align-items-center mx-auto"} items={['home','about','skills','portfolio']} componentTag={Nav} currentClassName={"active"} >
+          <ScrollSpy className={"d-flex align-items-center mx-auto text-center"} items={['home','about','skills','portfolio']} componentTag={Nav} currentClassName={"active"} >
             <Nav.Link active={false} href={"#home"}>Home</Nav.Link>
             <Nav.Link active={false} href={"#about"} className={"mx-3"}>About me</Nav.Link>
             <Nav.Link active={false} href={"#skills"}>My Skills</Nav.Link>
