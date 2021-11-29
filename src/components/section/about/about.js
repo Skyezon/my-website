@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react"
 import {gsap} from "gsap"
 import {ScrollTrigger} from "gsap/ScrollTrigger"
-import Style from "./about.module.scss"
+import * as Style from "./about.module.scss"
 import Shape from "./shape/shape"
 import Section from "../section"
 import { data, shapeColor } from "../../../config/about.config"

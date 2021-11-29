@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import Section from "../section"
-import Style from "./portfolio.module.scss"
+import * as Style from "./portfolio.module.scss"
 import BackgroundImage from "gatsby-background-image"
 import data from "../../../config/portfolio.config"
 import { Button, Col, Row, Badge } from "react-bootstrap"

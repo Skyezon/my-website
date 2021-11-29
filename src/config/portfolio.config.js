@@ -20,9 +20,9 @@ const data = [
   },
   {
     "id" : 3,
-    "title" : "TechnoScape website",
+    "title" : "TechnoScape",
     "desc" : "A website for an event",
-    "liveProject": "",
+    "liveProject": "https://technoscape.bncc.net/",
     "github" : "https://github.com/Skyezon/technoscape",
     "image" : "technoscape",
     "tags" : ["javascript","sass","webpack"]
@@ -47,8 +47,8 @@ const data = [
   },
   {
     "id" : 6,
-    "title" : "bmi-calculator (course)",
-    "desc" : "one of my flutter projects",
+    "title" : "bmi-calculator",
+    "desc" : "one of my course flutter projects",
     "liveProject": "",
     "github" : "https://github.com/Skyezon/bmi-calculator-flutter",
     "image" : "bmi",
@@ -65,8 +65,8 @@ const data = [
   },
   {
     "id" : 8,
-    "title" : "Group profile example",
-    "desc" : "a group profile website",
+    "title" : "Group profile",
+    "desc" : "a group profile example website",
     "liveProject": "",
     "github" : "https://github.com/Skyezon/web-mulmeds",
     "image" : "mulmed",

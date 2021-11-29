@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react"
 import {gsap, Power3} from "gsap"
-import Style from "./splash-screen.module.scss"
+import * as Style from "./splash-screen.module.scss"
 
 const SplashScreen = () => {
   let pole = useRef(null)
@@ -12,9 +12,7 @@ const SplashScreen = () => {
     }});
   useEffect(() =>{
     let firstLine = parent.children[0]
-    let name = firstLine
     let secondLine = parent.children[1]
-    let job = secondLine.children[0].children[0]
 
     gsap.to([pole,parent],{
       css:{

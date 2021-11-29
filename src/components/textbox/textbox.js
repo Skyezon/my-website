@@ -1,7 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Layout from "../layout/layout"
-import Style from "./textbox.module.scss"
+import * as Style from "./textbox.module.scss"
 
 const TextBox = (props) => {
   return(

@@ -1,5 +1,5 @@
 import React  from "react"
-import Style from "./footer.module.scss"
+import * as Style from "./footer.module.scss"
 import Social from "./social"
 import data from "../../../config/footer.config"
 

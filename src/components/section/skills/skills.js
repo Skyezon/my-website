@@ -1,6 +1,6 @@
 import React from "react"
 import Section  from "../section"
-import Style from "./skills.module.scss"
+import * as Style from "./skills.module.scss"
 import { Col, Row, Card} from "react-bootstrap"
 import data from "../../../config/skills.config"
 

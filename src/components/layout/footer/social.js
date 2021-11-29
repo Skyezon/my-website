@@ -1,5 +1,5 @@
 import React from "react"
-import Style from "./social.module.scss"
+import * as Style from "./social.module.scss"
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 
 const Social = (data) => {
